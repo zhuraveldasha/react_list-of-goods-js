@@ -17,7 +17,7 @@ export const goodsFromServer = [
 
 export const App = () => {
   const [sortGoods, setSortGoods] = useState(goodsFromServer);
-  const [sortType, setSortType] = useState();
+  const [sortType, setSortType] = useState('');
 
   const sortByAlphabetically = () => {
     setSortGoods([...sortGoods].sort((a, b) => a.localeCompare(b)));
